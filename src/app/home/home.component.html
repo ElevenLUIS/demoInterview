@@ -1,0 +1,7 @@
+<div id="home-image-container" *ngIf="currentImg">
+    <img [src]="currentImg.url" alt="">
+    <div id="action-buttons">
+        <button id="dismiss-button" (click)="getRandomImage()">𝗫</button>
+        <button id="fav-button" (click)="addImageToFavs()">❤</button>
+    </div>
+</div>

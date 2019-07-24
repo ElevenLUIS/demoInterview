@@ -1,0 +1,6 @@
+<div id="fav-images-container">
+    <div class="fav-image" *ngFor="let img of favImages">
+        <img [src]="img.url" alt="" />
+        <button class="delete-fav-button" (click)="deleteFavorite(img)">𝗫</button>
+    </div>
+</div>
